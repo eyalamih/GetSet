@@ -1,0 +1,10 @@
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.csproj.AssemblyReference.cache
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.GeneratedMSBuildEditorConfig.editorconfig
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.AssemblyInfoInputs.cache
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.AssemblyInfo.cs
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.csproj.CoreCompileInputs.cache
+/home/eyal/Downloads/GetSet/src/GetSet/bin/Release/netstandard2.0/GetSet.deps.json
+/home/eyal/Downloads/GetSet/src/GetSet/bin/Release/netstandard2.0/GetSet.dll
+/home/eyal/Downloads/GetSet/src/GetSet/bin/Release/netstandard2.0/GetSet.pdb
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.dll
+/home/eyal/Downloads/GetSet/src/GetSet/obj/Release/netstandard2.0/GetSet.pdb

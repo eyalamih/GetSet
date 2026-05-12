@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GetSet</id>
+    <version>1.0.0</version>
+    <authors>eyal453454</authors>
+    <developmentDependency>true</developmentDependency>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/eyalamih/GetSet</projectUrl>
+    <description>A Roslyn source generator that lets you write inline field+property syntax.
+      Declare a field with a body block and GetSet auto-generates the backing field
+      and full property — no boilerplate required.</description>
+    <tags>roslyn source-generator property getset codegen</tags>
+    <repository type="git" url="https://github.com/eyalamih/GetSet" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/eyal/Downloads/GetSet/src/GetSet/bin/Release/netstandard2.0/GetSet.dll" target="analyzers/dotnet/cs/GetSet.dll" />
+    <file src="/home/eyal/Downloads/GetSet/README.md" target="/README.md" />
+  </files>
+</package>

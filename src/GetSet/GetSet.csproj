@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>GetSet</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>eyal453454</Authors>
+    <Description>
+      A Roslyn source generator that lets you write inline field+property syntax.
+      Declare a field with a body block and GetSet auto-generates the backing field
+      and full property — no boilerplate required.
+    </Description>
+    <PackageTags>roslyn;source-generator;property;getset;codegen</PackageTags>
+    <PackageProjectUrl>https://github.com/eyalamih/GetSet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/eyalamih/GetSet</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Required for source generators -->
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <IsRoslynComponent>true</IsRoslynComponent>
+
+    <!-- Don't include as a regular dependency — it's a generator -->
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Roslyn source generator APIs (must be netstandard2.0 compatible) -->
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!-- Pack the generator DLL into the right NuGet folder -->
+  <ItemGroup>
+    <None Include="$(OutputPath)\$(AssemblyName).dll"
+          Pack="true"
+          PackagePath="analyzers/dotnet/cs"
+          Visible="false" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
